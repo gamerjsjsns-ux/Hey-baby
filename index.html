@@ -96,13 +96,13 @@
 
         /* Text Boxes */
         .text-box {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             padding: 15px;
             border-radius: 15px;
             font-size: 0.9rem;
             line-height: 1.5;
             color: #555;
-            max-height: 30vh;
+            max-height: 35vh; /* Increased height for longer text */
             overflow-y: auto; /* Allow text scroll if too long */
             margin-bottom: 15px;
             text-align: left;
@@ -118,6 +118,8 @@
             font-size: 0.85rem;
             line-height: 1.6;
             width: 100%;
+            max-height: 40vh;
+            overflow-y: auto;
         }
 
         /* Buttons */
@@ -214,8 +216,8 @@
             </div>
 
             <div class="text-box">
-                <p>On the day we met for the first time, February 15th, we talked about so many random things. I remember we talked about how uncle used to play tournaments and I could relate because my papa used to as well.</p>
-                <p>The way you popped up in the DMs was actually funny. You told me about your hostel adventures and I was just like, <i>'Damn, this girl is cool'</i>. That was my kind of crazy.</p>
+                <p>On the day we met for the first time, February 15th, we talked about so many random things. The way you popped up in the DMs was actually funny.</p>
+                <p>We talked about so much, you told me about your hostel adventures and I was just like, <i>'Damn, so much is happening here, this girl is cool'</i> and I just loved how enthusiastically you were telling me those things. That was my kind of crazy.</p>
             </div>
             
             <button class="btn" onclick="nextSlide(3)">Next Memory ➡️</button>
@@ -231,7 +233,7 @@
 
             <div class="text-box">
                 <p>I didn't realize it at first but my favorite place to be slowly became wherever you were. Whether we were lost in a game on Roblox or just sitting together in silence, everything felt more complete with you there.</p>
-                <p>I was so nervous to tell you after all this time but finally opening up to you made that the best day I have ever had.</p>
+                <p>It made me realize how much I had fallen for you. I was so nervous to tell you after all this time but finally opening up to you made that the best day I have ever had and that day changed everything for the better.</p>
             </div>
             
             <button class="btn" onclick="nextSlide(4)">Next Memory ➡️</button>
@@ -246,9 +248,13 @@
             </div>
 
             <div class="text-box">
-                <p>Every laugh, every smile, every time we talked. The times I asked you to just keep the camera on because I could watch you for days and still never feel tired of it.</p>
+                <p>Every laugh, every smile, every time we talked, every time we saw each other. The times I asked you to just keep the camera on because i used to be so happy just by that and I could watch you for days and still never feel tired of it.</p>
+                <p>There was this line I said when you asked me for a pickup line. It was meant for you that day too so I will say it again:</p>
                 <hr style="border: 0; border-top: 1px solid #ffccd5; margin: 10px 0;">
-                <p style="color: #d63384; font-style: italic;">"If solipsism is true and you are just a creation of my mind, then I must be the luckiest dreamer alive. And if it really is that way, I would love to stay in it forever."</p>
+                <p style="font-style: italic;">
+                    "<span style="color: #d63384; font-weight: bold;">If solipsism is true and you are just a creation of my mind, then I must be the luckiest dreamer alive.</span> 
+                    And if it really is that way, I would love to stay in it forever."
+                </p>
             </div>
             
             <button class="btn" onclick="nextSlide(5)">Read Letter 💌</button>
@@ -258,8 +264,7 @@
             <h3>My Anishka,</h3>
             <div class="paper">
                 <p>Honestly baby, life is just better with you in it. Every day by your side is like a page from a storybook I never want to close, literally the best part of both my reality and my imagination.</p>
-                <p>You make the bad days bearable and the good days incredible. It feels almost impossible to find someone who is both your love and your best friend, but I found that in you.</p>
-                <p>Thanks for being my person. I am so lucky to be yours.</p>
+                <p>You make the bad days bearable and the good days incredible. It feels almost impossible to find someone who is both your love and your best friend, but I found that in you. Thanks for being my person. I am so lucky to be yours.</p>
                 <p style="font-weight: bold; margin-top: 15px; color: #d63384;">I LOVE YOU SO MUCH.<br>FOREVER YOURS ❤️</p>
             </div>
             <button class="btn" onclick="nextSlide(6)">One Last Thing... 🌹</button>
@@ -323,7 +328,7 @@
 
             // Logic for each click
             if (noCount === 1) {
-                responseText.innerText = "I know your 'No' means 'Yes' 😉";
+                responseText.innerText = "I know your no means yes 😉";
                 yesBtn.style.transform = "scale(1.2)"; // Make Yes bigger
             } else if (noCount === 2) {
                 responseText.innerText = "Are you really sure? 🥺";
@@ -332,7 +337,7 @@
                 responseText.innerText = "Babyyy pleaseeeee 😭";
                 yesBtn.style.transform = "scale(1.4)";
             } else if (noCount === 4) {
-                responseText.innerText = "If you wanted me to crash the bike into a tree, just say that 😞";
+                responseText.innerText = "If you wanted me to crash the bike into a tree, you could have just said that instead of saying no 😞";
                 yesBtn.style.transform = "scale(1.5)";
             } else {
                 responseText.innerText = "Okay, I am taking my no button away! 😤";
@@ -383,4 +388,3 @@
     </script>
 </body>
 </html>
-
